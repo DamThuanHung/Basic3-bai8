@@ -80,7 +80,7 @@ echo $h."\n";
 }
 
 for($k = 0;$k <= 4;$k++){
-    if (k ==3) {
+    if ($k ==3) {
         break;
     }
     echo $k."\n";
@@ -101,3 +101,36 @@ if($q == 3){
     echo $q."\n";
 }
     }
+
+    function say_hello(){
+        echo"hello world"."\n";
+    }
+    // say_hello
+
+    function cal($a, $b, $c){
+        return ($a + $b + $c)/3;
+    };
+    
+    $result = cal(9,4,2);
+    echo $result."\n";
+
+    class Student 
+    {
+        function avg(){
+            echo((80 + 70) / 2)."\n";
+        }
+    } 
+
+
+    for ($i=1 ; $i <= 20 ; $i++) { 
+      if( ($i % 3 == 0) && $i % 5 == 0 ){
+          echo"Bà năm nắm tay ông Ba"."<br />";
+      }else if($i % 3 == 0){
+        echo"Ông Ba"."<br />";
+      }elseif($i % 5 == 0){
+        echo"Bà Năm"."<br />";
+      }else{
+          echo $i."<br />";
+      }
+    }
+   
